@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"
+      integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+      integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Css link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>my-project</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <a href="index.html"><img class="logo" src="logo-colored.png" alt="" /></a>
+
+          <div class="searchBar">
+            <input type="text" id="search" />
+            <div class="dropdown">
+              <select name="" id="">
+                <option value="Category">Category</option>
+                <option value="Category">Category</option>
+                <option value="Category">Category</option>
+                <option value="Category">Category</option>
+                <option value="Category">Category</option>
+              </select>
+            </div>
+            <button class="search-btn">Search</button>
+          </div>
+          <div class="nav-icons">
+            <div class="user">
+              <i class="bi bi-person-fill"></i>
+              <p class="icon-name">User</p>
+            </div>
+            <div class="user">
+              <i class="bi bi-chat-left-dots-fill"></i>
+              <p class="icon-name">Message</p>
+            </div>
+            <div class="user">
+              <i class="bi bi-heart-fill"></i>
+              <p class="icon-name">Order</p>
+            </div>
+            <div class="user">
+              <a href="cart.html"><i class="bi bi-cart-fill"></i></a>
+              <p class="icon-name">Cart</p>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- TabBar -->
+
+      <div class="container tabbar p-0 my-0">
+        <div
+          class="tabLinks d-flex align-itmes-center justify-content-between w-50"
+        >
+          <div class="category-menu d-flex">
+            <i class="bi bi-list"></i>
+            <p class="m-0">All Category</p>
+          </div>
+          <a class="nav-link" href="#">Hot Offer</a>
+          <a class="nav-link" href="#">Gift Boxes</a>
+          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" href="list.html">Menu Items</a>
+          <a class="nav-link" href="#">Help</a>
+        </div>
+        <div class="dropdown">
+          <div class="language-dropdown">
+            <button class="language-dropdown-btn">
+              English
+              <img class="vectory" src="assets\Vector.png" alt="" />
+            </button>
+            <ul class="language-dropdown-menu">
+              <p class="lang">English</p>
+              <p class="lang">Urdu</p>
+              <p class="lang">Pashto</p>
+            </ul>
+          </div>
+          <button class="dropdown-btn">
+            <p>Ship to</p>
+            <img class="dImg" src="assets/flags/US@2x.png" alt="" />
+            <img class="v-img" src="assets/Vector.png" alt="" />
+          </button>
+          <ul class="dropdownMenu">
+            <li>
+              <a href="#">
+                <img
+                  class="fixed-item menuImg"
+                  src="./assets/flags/US@2x.png"
+                  alt="Image 1"
+                />
+                <p>America</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  class="menuImg"
+                  src="./assets/flags/AE@2x.png"
+                  alt="Image 2"
+                />
+                <p>Arab Emarat</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  class="menuImg"
+                  src="./assets/flags/CN@2x.png"
+                  alt="Image 3"
+                />
+                <p>China</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  class="menuImg"
+                  src="./assets/flags/DE@2x.png"
+                  alt="Image 3"
+                />
+                <p>Germani</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  class="menuImg"
+                  src="./assets/flags/CN@2x.png"
+                  alt="Image 3"
+                />
+                <p>America</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  class="menuImg"
+                  src="./assets/flags/DK@2x.png"
+                  alt="Image 3"
+                />
+                <p>Denmark</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+<main>
+
+  <!-- Hero Section -->
+  
+  <div class="container hero">
+    <div class="hero-links">
+      <a class="nav-link hero-link" href="list.html"> Automobiles </a>
+      <a class="nav-link hero-link" href="#"> Clothes and wear </a>
+      <a class="nav-link hero-link" href="#"> Home interiors </a>
+      <a class="nav-link hero-link" href="#"> Computer and tech </a>
+      <a class="nav-link hero-link" href="#"> Tools, equipments </a>
+      <a class="nav-link hero-link" href="#"> Sports and outdoor </a>
+      <a class="nav-link hero-link" href="#"> Animal and pets </a>
+      <a class="nav-link hero-link" href="#"> Machinery tools </a>
+      <a class="nav-link hero-link" href="#"> More category </a>
+    </div>
+      <div class="main-content">
+        <div class="content">
+          <p class="fs-1">Latest trending</p>
+          <h2 class="fs-1">Electronic items</h2>
+          <button class="btn btn-light w-25">Learn More</button>
+        </div>
+      </div>
+      <div class="right-bar">
+        <div class="login-sms">
+          <div class="login">
+            <i class="bi bi-person-circle"></i>
+            <p>
+              Hi, user
+              <br />
+              let’s get stated
+            </p>
+          </div>
+          <div class="btns">
+            <button class="btn btn-primary btn-sm">Login</button>
+            <button class="btn btn-light btn-sm">Learn More</button>
+          </div>
+        </div>
+        <div class="notification">
+          <p>Get US $10 off with a new supplier</p>
+        </div>
+        <div class="notification n-2">
+          <p>Get US $10 off with a new supplier</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deal and Offer Section -->
+    
+    <section class="container">
+      <div class="offerSec">
+        <div class="delivery">
+          <div class="offersect-content">
+            <h6>Deals and Offer</h6>
+            <p>Hygiene equipments</p>
+          </div>
+          
+          <div class="timer">
+            <div class="box days">
+              <h6>4</h6>
+              <p>Days</p>
+            </div>
+            <div class="box hours">
+              <h6>13</h6>
+              <p>Hour</p>
+            </div>
+            <div class="box minuts">
+              <h6>34</h6>
+              <p>Min</p>
+            </div>
+            <div class="box seconds">
+              <h6>56</h6>
+              <p>Sec</p>
+            </div>
+          </div>
+        </div>
+        <div class="products">
+          <div class="product">
+            <div class="p-img">
+              <img src="assets/offerSectImgs/watch.png" alt="" width="110" />
+            </div>
+            <p>Smrart Watch</p>
+            <small>25%</small>
+          </div>
+          <div class="product">
+            <div class="p-img">
+              <img src="assets/offerSectImgs/laptop.png" alt="" width="130" />
+            </div>
+            <p>Smrart Watch</p>
+            <small>25%</small>
+          </div>
+          <div class="product">
+            <div class="p-img">
+              <img src="assets/offerSectImgs/camera.png" alt="" width="110" />
+            </div>
+            <p>Smrart Watch</p>
+            <small>25%</small>
+          </div>
+          <div class="product">
+            <div class="p-img">
+              <img src="assets/offerSectImgs/headphone.png" alt="" width="100" />
+            </div>
+            <p>Smrart Watch</p>
+            <small>25%</small>
+          </div>
+          <div class="product">
+            <div class="p-img">
+              <img src="assets/offerSectImgs/mobile.png" alt="" width="100" />
+            </div>
+            <p>Smrart Watch</p>
+            <small>25%</small>
+          </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+    <!-- Home And outDoor Section -->
+    
+    <section class="container">
+      <div class="outdor">
+        <div class="bg-pic">
+          <h4>Home and <br />outdoor</h4>
+          <button class="btn btn-light btn-sm">Source now</button>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="price">
+              <p class="p-0 m-0">Soft Chair</p>
+              <p class="p-0 m-0 text-body-secondary">
+                From <br />
+                USD 10
+              </p>
+            </div>
+            <img src="assets\interior\1.png" alt="" />
+          </div>
+          <div class="col">
+            <div class="price">
+              <p class="p-0 m-0">Sofa & chair</p>
+              <p class="p-0 m-0 text-body-secondary">
+                From <br />
+                USD 19
+              </p>
+            </div>
+            <img src="assets\interior\6.png" alt="" />
+          </div>
+          <div class="col">
+            <div class="price">
+              <p class="p-0 m-0">Kitchen dishes</p>
+              <p class="p-0 m-0 text-body-secondary">
+                From <br />
+                USD 10
+              </p>
+            </div>
+            <img src="assets\interior\image 93.png" alt="" />
+          </div>
+          <div class="col">
+            <div class="price">
+              <p class="p-0 m-0">Smart watches</p>
+              <p class="p-0 m-0 text-body-secondary">
+                From <br />
+                USD 10
+              </p>
+            </div>
+            <img src="assets\interior\3.png" alt="" />
+          </div>
+          <div class="col">
+            <div class="price">
+              <p class="p-0 m-0">Kitchen mixer</p>
+              <p class="p-0 m-0 text-body-secondary">
+                From <br />
+                USD 100
+              </p>
+            </div>
+            <img src="assets\interior\9.png" alt="" />
+          </div>
+          <div class="col">
+            <div class="price">
+              <p class="p-0 m-0">Blenders</p>
+              <p class="p-0 m-0 text-body-secondary">
+                From <br />
+                USD 39
+              </p>
+            </div>
+            <img src="assets\interior\8.png" alt="" />
+          </div>
+          <div class="col">
+            <div class="price">
+              <p class="p-0 m-0">Home appliance</p>
+              <p class="p-0 m-0 text-body-secondary">
+                From <br />
+                USD 19
+              </p>
+            </div>
+            <img src="assets\interior\7.png" alt="" />
+          </div>
+          <div class="col">
+            <div class="price">
+              <p class="p-0 m-0">Coffee maker</p>
+              <p class="p-0 m-0 text-body-secondary">
+                From <br />
+                USD 10
+              </p>
+            </div>
+            <img src="assets\interior\image 89.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Consumer Electronic and Gedgets -->
+
+    <section class="container">
+            <div class="ElectircSec">
+              <div class="electricSec-bg-pic">
+               <h4>Consumer electronics and gadgets</h4>
+               <button class="btn btn-light btn-sm ">Source now</button>
+                </div>
+                <div class="e-row">
+                  <div class="e-col">
+                        <div class="e-price px-3">
+                          <p class="p-0 m-0 mb-1">Watch</p>
+                        <p class="p-0 m-0 text-body-secondary">From <br /> USD 10</p>
+                        </div>
+                        <img src="assets\Electronicimgs\watch.png" alt="" width={30}/>
+                      </div>
+                      <div class="e-col">
+                        <div class="e-price px-3">
+                          <p class="p-0 m-0 mb-1">Camera</p>
+                          <p class="p-0 m-0 text-body-secondary">From <br /> USD 10</p>
+                        </div>
+                        <img src="assets\Electronicimgs\camera.png" alt="" width={30}/>
+                      </div>
+                    <div class="e-col">
+                        <div class="e-price px-3">
+                          <p class="p-0 m-0 mb-1">Laptop</p>
+                          <p class="p-0 m-0 text-body-secondary">From <br /> USD 10</p>
+                        </div>
+                        <img src="assets\Electronicimgs\laptop.png" alt="" width={30}/>
+                    </div>
+                    <div class="e-col">
+                        <div class="e-price px-3">
+                        <p class="p-0 m-0 mb-1">Head Phone</p>
+                        <p class="p-0 m-0 text-body-secondary">From <br /> USD 10</p>
+                      </div>
+                        <img src="assets\Electronicimgs\headphone.png" alt="" width={30}/>
+                    </div>
+                    <div class="e-col">
+                      <div class="e-price px-3">
+                        <p class="p-0 m-0 mb-1">Tablet</p>
+                        <p class="p-0 m-0 text-body-secondary">From <br /> USD 10</p>
+                        </div>
+                        <img src="assets\Electronicimgs\image 32.png" alt="" width={30}/>
+                      </div>
+                    <div class="e-col">
+                        <div class="e-price px-3">
+                          <p class="p-0 m-0 mb-1">I phone</p>
+                        <p class="p-0 m-0 text-body-secondary">From <br /> USD 10</p>
+                      </div>
+                      <img src="assets\Electronicimgs\image 33.png" alt="" width={30}/>
+                    </div>
+                    <div class="e-col">
+                      <div class="e-price px-3">
+                        <p class="p-0 m-0 mb-1">Soft Chair</p>
+                        <p class="p-0 m-0 text-body-secondary">From <br /> USD 10</p>
+                      </div>
+                      <img src="assets\Electronicimgs\image 85.png" alt="" width={30}/>
+                    </div>
+                    <div class="e-col">
+                        <div class="e-price px-3">
+                        <p class="p-0 m-0 mb-1">Tablet</p>
+                        <p class="p-0 m-0 text-body-secondary">From <br /> USD 10</p>
+                        </div>
+                        <img src="assets\Electronicimgs\mobile.png" alt="" width={30}/>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        
+        <!-- Form Section -->
+
+        <section class="container">
+            <div class="form">
+                <div class="form-data">
+                    <h2>An easy way to send requests to all suppliers</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="registeration">
+                    <h3>Send quote to suppliers</h3>
+                    <input type="text" placeholder="What item you need?" />
+                    <textarea  placeholder="Type more details"></textarea>
+                    <div class="inp">
+                    <input  type="text" placeholder="Quantity" />
+                    <select class="dropdown" name="" id="">
+                      <option value="Pcs">Pcs</option>
+                      <option value="Pcs">Pcs</option>
+                      <option value="Pcs">Pcs</option>
+                      <option value="Pcs">Pcs</option>
+                    </select>
+                     </div>
+                     <div class="bttn d-grid d-md-block">
+                    <button class="btn btn-primary" type="button">Send inquiry</button> 
+                     </div>
+                    </div>
+            </div>
+        </section>
+        
+        <!-- Recomended Items Section -->
+        
+        <section class="container">
+            <div class="recommended">
+                <h2>Recommended Items</h2>
+                <div class="recommended-items">
+                  <div class="item">
+                    <img src="\imgs\Bitmap.png" alt="" width="150" />
+                    <div class="item-detail">
+                      <h6 class="m-0">$10.30</h6>
+                            <p class="fs-6 text-body-secondary">T-shirts with multiple colors, for men</p>
+                        </div>
+                      </div>
+                    <div class="item">
+                      <img src="\imgs\2 1.png" alt="" width="150" />
+                      <div class="item-detail">
+                            <h6 class="m-0">$10.30</h6>
+                            <p class="fs-6 text-body-secondary">T-shirts with multiple colors, for men</p>
+                          </div>
+                        </div>
+                    <div class="item">
+                        <img src="\imgs\image 30.png" alt="" width="150" />
+                        <div class="item-detail">
+                          <h6 class="m-0">$10.30</h6>
+                            <p class="fs-6 text-body-secondary">T-shirts with multiple colors, for men</p>
+                          </div>
+                        </div>
+                        <div class="item">
+                        <img src="\imgs\image 24.png" alt="" width="150" />
+                        <div class="item-detail">
+                          <h6 class="m-0">$10.30</h6>
+                            <p class="fs-6 text-body-secondary">T-shirts with multiple colors, for men</p>
+                        </div>
+                      </div>
+                    <div class="item">
+                        <img src="\imgs\image 26.png" alt="" width="150" />
+                        <div class="item-detail">
+                            <h6 class="m-0">$10.30</h6>
+                            <p class="fs-6 text-body-secondary">T-shirts with multiple colors, for men</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="\imgs\Bitmap (2).png" alt="" width="150" />
+                        <div class="item-detail">
+                          <h6 class="m-0">$10.30</h6>
+                            <p class="fs-6 text-body-secondary">T-shirts with multiple colors, for men</p>
+                        </div>
+                      </div>
+                    <div class="item">
+                        <img src="\imgs\image 86.png" alt="" width="150" />
+                        <div class="item-detail">
+                            <h6 class="m-0">$10.30</h6>
+                            <p class="fs-6 text-body-secondary">T-shirts with multiple colors, for men</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                      <img src="\imgs\image 26.png" alt="" width="150" />
+                        <div class="item-detail">
+                            <h6 class="m-0">$10.30</h6>
+                            <p class="fs-6 text-body-secondary">T-shirts with multiple colors, for men</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="\imgs\image 90.png" alt="" width="150" />
+                        <div class="item-detail">
+                            <h6 class="m-0">$10.30</h6>
+                            <p class="fs-6 text-body-secondary">T-shirts with multiple colors, for men</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                      <img src="\imgs\image 85.png" alt="" width="150" />
+                        <div class="item-detail">
+                            <h6 class="m-0">$10.30</h6>
+                            <p class="fs-6 text-body-secondary">T-shirts with multiple colors, for men</p>
+                        </div>
+                    </div>
+                    
+                  </div>
+            </div>
+        </section>
+        
+        <!-- Our Services Section -->
+
+        <section class="container">
+            <div class="services">
+              <h2 class="mb-3">Our extra services</h2>
+                <div class="items">
+                  <div class="service-item">
+                        <img src="imgs copy\Mask group.png" alt="" />
+                        <div class="search-bg">
+                        <i class="bi bi-search search fs-6"></i>
+                      </div>
+                      <p class="p-2">Source from <br />Industry Hubs</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="imgs copy\Mask group (1).png" alt="" />
+                        <div class="search-bg">
+                          <i class="bi bi-archive search fs-6"></i>
+                        </div>
+                        <p class="p-2">Customize Your <br /> Products</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="imgs copy\image 106.png" alt="" />
+                        <div class="search-bg">
+                        <i class="bi bi-send-arrow-down search fs-6"></i>
+                      </div>
+                      <p class="p-2">Fast, reliable shipping <br /> by ocean or air</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="imgs copy\image 107.png" alt="" />
+                        <div class="search-bg">
+                        <i class="bi bi-shield-shaded search fs-6"></i>
+                        </div>
+                        <p class="p-2">Product monitoring <br />and inspection</p>
+                    </div>
+                    
+                </div>
+              </div>
+       </section>
+            <!-- Country Section  -->
+
+            <section class="container">
+              <div class="country">
+                <h2>Suppliers by region</h2>
+                <div class="countries">
+                  <div class="country-1">
+                    <img src="flages\AE@2x.png" alt="" width={30} height={20} />
+                        <div class="country-dtls">
+                        <p class="p-0 m-0">Arabic Emirates</p>
+                        <p class="text-body-secondary m-0 p-0">shopname.ae</p>
+                      </div>
+                    </div>
+                     <div class="country-1">
+                        <img src="flages\icon.png" alt="" width={30} height={20} />
+                        <div class="country-dtls">
+                        <p class="p-0 m-0">Australia</p>
+                        <p class="text-body-secondary m-0 p-0">shopname.ae</p>
+                        </div>
+                      </div>
+                      <div class="country-1">
+                        <img src="flages\US@2x.png" alt="" width={30} height={20} />
+                        <div class="country-dtls">
+                        <p class="p-0 m-0">United States</p>
+                        <p class="text-body-secondary m-0 p-0">shopname.ae</p>
+                      </div>
+                    </div>
+                    <div class="country-1">
+                        <img src="flages\RU@2x.png" alt="" width={30} height={20} />
+                        <div class="country-dtls">
+                        <p class="p-0 m-0">Russia</p>
+                        <p class="text-body-secondary m-0 p-0">shopname.ru</p>
+                        </div>
+                    </div>
+                     <div class="country-1">
+                        <img src="flages\IT@2x.png" alt="" width={30} height={20} />
+                        <div class="country-dtls">
+                          <p class="p-0 m-0">Italy</p>
+                        <p class="text-body-secondary m-0 p-0">shopname.it</p>
+                      </div>
+                    </div>
+                     <div class="country-1">
+                        <img src="flages\DK@2x.png" alt="" width={30} height={20} />
+                        <div class="country-dtls">
+                        <p class="p-0 m-0">Denmark</p>
+                        <p class="text-body-secondary m-0 p-0">denmark.com.dk</p>
+                      </div>
+                    </div>
+                     <div class="country-1">
+                       <img src="flages\FR@2x.png" alt="" width={30} height={20} />
+                       <div class="country-dtls">
+                         <p class="p-0 m-0">France</p>
+                        <p class="text-body-secondary m-0 p-0">shopname.com.fr</p>
+                      </div>
+                    </div>
+                     <div class="country-1">
+                        <img src="flages\AE@2x.png" alt="" width={30} height={20} />
+                        <div class="country-dtls">
+                        <p class="p-0 m-0">Arabic Emirates</p>
+                        <p class="text-body-secondary m-0 p-0">shopname.ae</p>
+                        </div>
+                    </div>
+                     <div class="country-1">
+                        <img src="flages\CN@2x.png" alt="" width={30} height={20} />
+                        <div class="country-dtls">
+                          <p class="p-0 m-0">China</p>
+                          <p class="text-body-secondary m-0 p-0">shopname.ae</p>
+                        </div>
+                    </div>
+                     <div class="country-1">
+                        <img src="flages\GB@2x.png" alt="" width={30} height={20} />
+                        <div class="country-dtls">
+                        <p class="p-0 m-0">Great Britain</p>
+                        <p class="text-body-secondary m-0 p-0">shopname.co.uk</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <!-- Subscribtion Section -->
+          
+          <section class="container-fluid">
+            <div class="subscribe">
+                <div class="sub-content">
+                <h3>Subscribe on our newsletter</h3>
+                <p class="p-0 mb-3">Get daily news on upcoming offers from many suppliers all over the world</p>
+                <div class="sub-form w-75 d-flex">
+                  <input class="form-control mx-2" type="text" placeholder="Email" />
+                <button type="button" class="btn btn-primary">Subscribe</button>
+              </div>
+            </div>
+            </div>
+          </section>
+
+          <!-- Footer -->
+
+          <footer class="container-fluid">
+        <div class="container">
+          <div class="footer">
+            <div class="f-top">
+              <div class="f-col">
+                <!-- Logo -->
+                <img
+                  src="logo-colored.png"
+                  alt=""
+                  width="120"
+                />
+                <p class="px-5">
+                  Best information about the company gies here but now lorem
+                  ipsum is
+                </p>
+                
+                <!-- Social Media Icons -->
+
+                <div class="f-icons">
+                  <i class="bi bi-facebook"></i>
+                  <i class="bi bi-twitter"></i>
+                  <i class="bi bi-linkedin"></i>
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-youtube"></i>
+                </div>
+              </div>
+
+              <!-- Links -->
+              
+              <div class="f-col">
+                <h6>About</h6>
+                <p class="p-0  m-0 text-body-secondary">About Us</p>
+                <p class="p-0  m-0 text-body-secondary">Find store</p>
+                <p class="p-0  m-0 text-body-secondary">Categories</p>
+                <p class="p-0  m-0 text-body-secondary">Blogs</p>
+              </div>
+               <div class="f-col">
+                <h6>Partnership</h6>
+                <p class="p-0  m-0 text-body-secondary">About Us</p>
+                <p class="p-0  m-0 text-body-secondary">Find store</p>
+                <p class="p-0  m-0 text-body-secondary">Categories</p>
+                <p class="p-0  m-0 text-body-secondary">Blogs</p>
+              </div>
+               <div class="f-col">
+                <h6>Information</h6>
+                <p class="p-0  m-0 text-body-secondary">Help Center</p>
+                <p class="p-0  m-0 text-body-secondary">Money Refund</p>
+                <p class="p-0  m-0 text-body-secondary">Shipping</p>
+                <p class="p-0  m-0 text-body-secondary">Contact us</p>
+              </div>
+               <div class="f-col">
+                <h6>About</h6>
+                <p class="p-0  m-0 text-body-secondary">For users</p>
+                <p class="p-0  m-0 text-body-secondary">Find store</p>
+                <p class="p-0  m-0 text-body-secondary">Categories</p>
+                <p class="p-0  m-0 text-body-secondary">Blogs</p>
+              </div>
+              
+              <div class="app">
+                <h6 class="mb-2">Get App</h6>
+                <img class="mb-1" src="./Group.png" alt=""width="100"  />
+                <img src="./market-button.png" alt=""width="100" />
+              </div>
+            </div>
+            <div class="footer-end">
+              <p>© 2023 Ecommerce</p>
+              <select name="" id="">
+                <option value="English">
+                  <img src="./flages/US@2x.png" alt="" width={40} />
+                  English
+                </option>
+              </select>
+            </div>
+          </div>
+        </footer>
+      </main>
+        
+    <script src="script.js"></script>
+  </body>
+</html>

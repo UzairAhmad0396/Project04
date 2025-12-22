@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"
+        integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap icons link -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+        integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Css link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>my-project</title>
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Navbar Start -->
+        <div class="container">
+            <nav class="nav">
+                <!-- Logo -->
+                <a href="index.html"><img class="logo" src="logo-colored.png" alt="" /></a>
+                <!-- Search Bar -->
+                <div class="searchBar">
+                    <input type="text" id="search" />
+                    <div class="dropdown">
+                        <select name="" id="">
+                            <option value="Category">Category</option>
+                            <option value="Category">Category</option>
+                            <option value="Category">Category</option>
+                            <option value="Category">Category</option>
+                            <option value="Category">Category</option>
+                        </select>
+                    </div>
+                    <button class="search-btn">Search</button>
+                </div>
+                <!-- Navbar icons -->
+                <div class="nav-icons">
+                    <div class="user">
+                        <i class="bi bi-person-fill"></i>
+                        <p class="icon-name">User</p>
+                    </div>
+                    <div class="user">
+                        <i class="bi bi-chat-left-dots-fill"></i>
+                        <p class="icon-name">Message</p>
+                    </div>
+                    <div class="user">
+                        <i class="bi bi-heart-fill"></i>
+                        <p class="icon-name">Order</p>
+                    </div>
+                    <div class="user">
+                        <a href="cart.html"><i class="bi bi-cart-fill"></i></a>
+                        <p class="icon-name">Cart</p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- TabBar -->
+
+        <div class="container tabbar p-0 my-0">
+            <div class="tabLinks d-flex align-itmes-center justify-content-between w-50">
+                <div class="category-menu d-flex">
+                    <i class="bi bi-list"></i>
+                    <p class="m-0">All Category</p>
+                </div>
+                <a class="nav-link" href="#">Hot Offer</a>
+                <a class="nav-link" href="#">Gift Boxes</a>
+                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#">Menu Items</a>
+                <a class="nav-link" href="#">Help</a>
+            </div>
+            <div class="dropdown">
+                <div class="language-dropdown">
+                    <button class="language-dropdown-btn">
+                        English
+                        <img class="vectory" src="assets\Vector.png" alt="" />
+                    </button>
+                    <ul class="language-dropdown-menu">
+                        <p class="lang">English</p>
+                        <p class="lang">Urdu</p>
+                        <p class="lang">Pashto</p>
+                    </ul>
+                </div>
+                <!-- Tabbar Dropdown  -->
+                <button class="dropdown-btn">
+                    <p>Ship to</p>
+                    <img class="dImg" src="assets/flags/US@2x.png" alt="" />
+                    <img class="v-img" src="assets/Vector.png" alt="" />
+                </button>
+                <ul class="dropdownMenu">
+                    <li>
+                        <a href="#">
+                            <img class="fixed-item menuImg" src="./assets/flags/US@2x.png" alt="Image 1" />
+                            <p>America</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="menuImg" src="./assets/flags/AE@2x.png" alt="Image 2" />
+                            <p>Arab Emarat</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="menuImg" src="./assets/flags/CN@2x.png" alt="Image 3" />
+                            <p>China</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="menuImg" src="./assets/flags/DE@2x.png" alt="Image 3" />
+                            <p>Germani</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="menuImg" src="./assets/flags/CN@2x.png" alt="Image 3" />
+                            <p>America</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="menuImg" src="./assets/flags/DK@2x.png" alt="Image 3" />
+                            <p>Denmark</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Menu Bar -->
+
+        <div class="container">
+            <div class="menubar">
+                <ul>
+                    <li>
+                        Home
+                        <img src="./assets/menuimg/Vector.png" alt="">
+                    </li>
+                    <li>
+                        Clothings
+                        <img src="./assets/menuimg/Vector.png" alt="">
+                    </li>
+                    <li>
+                        Mens Wear
+                        <img src="./assets/menuimg/Vector.png" alt="">
+                    </li>
+                    <li>
+                        Summer Clothing
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Main -->
+    <main>
+        <!-- Sid Bar -->
+        <section class="container">
+            <div class="list-page-content">
+                <div class="sidbar">
+                    <div class="sidbar-dropdown-1">
+                        <button class="d-btn">Catigary
+                            <img src="./assets/Vector2.png" alt="">
+                        </button>
+                        <div class="sidbar-dropdown-menus">
+                            <ul>
+                                <li>Mobile accessory</li>
+                                <li>Electronics</li>
+                                <li>Smartphones </li>
+                                <li>Modern tech</li>
+                                <a href="#">See all</a>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="sidbar-dropdown-1">
+                        <button class="d-btn">Brands
+                            <img src="./assets/Vector2.png" alt="">
+                        </button>
+                        <div class="sidbar-dropdown-menus">
+                            <div>
+                                <div class="sidbar-dropdown-list-item">
+                                    <input type="checkbox">
+                                    <a>Mobile accessory</a>
+                                </div>
+                                <div class="sidbar-dropdown-list-item">
+                                    <input type="checkbox">
+                                    <a>Electronics</a>
+                                </div>
+                                <div class="sidbar-dropdown-list-item">
+                                    <input type="checkbox">
+                                    <a>Smartphones </a>
+                                </div>
+                                <div class="sidbar-dropdown-list-item">
+                                    <input type="checkbox">
+                                    <a>Modern tech</a>
+                                </div>
+                                <a href="#">See all</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidbar-dropdown-1">
+                        <button class="d-btn">Feature
+                            <img src="./assets/Vector2.png" alt="">
+                        </button>
+                        <div class="sidbar-dropdown-menus">
+                            <div>
+                                <div class="sidbar-dropdown-list-item">
+                                    <input type="checkbox">
+                                    <a>Mobile accessory</a>
+                                </div>
+                                <div class="sidbar-dropdown-list-item">
+                                    <input type="checkbox">
+                                    <a>Electronics</a>
+                                </div>
+                                <div class="sidbar-dropdown-list-item">
+                                    <input type="checkbox">
+                                    <a>Smartphones </a>
+                                </div>
+                                <div class="sidbar-dropdown-list-item">
+                                    <input type="checkbox">
+                                    <a>Modern tech</a>
+                                </div>
+                                <a href="#">See all</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidbar-dropdown-1 price-sec">
+                        <button class="d-btn">Feature
+                            <img src="./assets/Vector2.png" alt="">
+                        </button>
+
+                        <input class="my-2" type="range">
+
+                        <div class="prices">
+                            <div class="min-price">
+                                <label for="">Min</label>
+                                <input type="texttext" placeholder="0">
+                            </div>
+                            <div class="mix-price">
+                                <label for="">Max</label>
+                                <input type="texttext" placeholder="99999">
+                            </div>
+                        </div>
+                        <button class="apply">Apply</button>
+                    </div>
+
+                    <div class="sidbar-dropdown-1">
+                        <button class="d-btn">Feature
+                            <img src="./assets/Vector2.png" alt="">
+                        </button>
+                        <div class="sidbar-dropdown-menus">
+                            <div>
+                                <div class="sidbar-dropdown-list-item">
+                                    <input type="radio">
+                                    <a>Mobile accessory</a>
+                                </div>
+                                <div class="sidbar-dropdown-list-item">
+                                    <input type="radio">
+                                    <a>Electronics</a>
+                                </div>
+                                <div class="sidbar-dropdown-list-item">
+                                    <input type="radio">
+                                    <a>Smartphones </a>
+                                </div>
+                                <div class="sidbar-dropdown-list-item">
+                                    <input type="radio">
+                                    <a>Modern tech</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidbar-dropdown-1">
+                            <button class="d-btn">Feature
+                                <img src="./assets/Vector2.png" alt="">
+                            </button>
+                            <div class="sidbar-dropdown-menus">
+                                <div class="stars">
+                                    <div class="star my-2">
+                                        <input type="checkbox">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                    <div class="star my-2">
+                                        <input type="checkbox">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-secondary"></i>
+                                    </div>
+                                    <div class="star my-2">
+                                        <input type="checkbox">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-secondary"></i>
+                                        <i class="bi bi-star-fill text-secondary"></i>
+                                    </div>
+                                    <div class="star my-2">
+                                        <input type="checkbox">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-secondary"></i>
+                                        <i class="bi bi-star-fill text-secondary"></i>
+                                        <i class="bi bi-star-fill text-secondary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Top -->
+
+                <div class="product-list">
+                    <div class="content-top">
+                        <p>12,911 items in <strong> Mobile accessory</strong></p>
+
+                        <div class="icons">
+                            <div class="list-check d-flex align-itmes-center justify-content-between">
+                                <input type="checkbox" name="" id="">
+                                Verified Only
+                            </div>
+                            <div class="selectbox">
+                                Feature
+                                <img src="./assets/Vector.png" alt="">
+                            </div>
+                            <i class="bi bi-grid-fill"></i>
+                            <i class="bi bi-list"></i>
+                        </div>
+                    </div>
+
+
+                    <!-- Grid View list -->
+
+                    <div class="grid-view">
+                        <div class="grid-item">
+                            <div class="grid-item-img">
+                                <img src="./assets//Electronicimgs/image 33.png" alt="" width="180">
+                            </div>
+                            <div class="gridItem-details">
+                                <div class="gridItem-price ">
+                                    <div>
+                                        <h6 class="py-2">$998.00</h6>
+                                        <p>$1128.00</p>
+                                    </div>
+                                    <i class="bi bi-heart border border-secondary px-1 text-primary"></i>
+                                </div>
+                                <div class=" d-flex align-itmes-center">
+                                    <div class="star d-flex align-itmes-center">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-secondary"></i>
+                                    </div>
+                                    <span class="text-warning mx-2">7.5</span>
+                                </div>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                            </div>
+                        </div>
+                       <div class="grid-item">
+                            <div class="grid-item-img">
+                                <img src="./assets//Electronicimgs/camera.png" alt="" width="180">
+                            </div>
+                            <div class="gridItem-details">
+                                <div class="gridItem-price ">
+                                    <div>
+                                        <h6 class="py-2">$998.00</h6>
+                                        <p>$1128.00</p>
+                                    </div>
+                                    <i class="bi bi-heart border border-secondary px-1 text-primary"></i>
+                                </div>
+                                <div class=" d-flex align-itmes-center">
+                                    <div class="star d-flex align-itmes-center">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-secondary"></i>
+                                    </div>
+                                    <span class="text-warning mx-2">7.5</span>
+                                </div>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-item-img">
+                                <img src="./assets//Electronicimgs/headphone.png" alt="" width="160" height="180">
+                            </div>
+                            <div class="gridItem-details">
+                                <div class="gridItem-price ">
+                                    <div>
+                                        <h6 class="py-2">$998.00</h6>
+                                        <p>$1128.00</p>
+                                    </div>
+                                    <i class="bi bi-heart border border-secondary px-1 text-primary"></i>
+                                </div>
+                                <div class=" d-flex align-itmes-center">
+                                    <div class="star d-flex align-itmes-center">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-secondary"></i>
+                                    </div>
+                                    <span class="text-warning mx-2">7.5</span>
+                                </div>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-item-img">
+                                <img src="./assets//Electronicimgs/image 85.png" alt="" width="180">
+                            </div>
+                            <div class="gridItem-details">
+                                <div class="gridItem-price ">
+                                    <div>
+                                        <h6 class="py-2">$998.00</h6>
+                                        <p>$1128.00</p>
+                                    </div>
+                                    <i class="bi bi-heart border border-secondary px-1 text-primary"></i>
+                                </div>
+                                <div class=" d-flex align-itmes-center">
+                                    <div class="star d-flex align-itmes-center">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-secondary"></i>
+                                    </div>
+                                    <span class="text-warning mx-2">7.5</span>
+                                </div>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-item-img">
+                                <img src="./assets//Electronicimgs/image 86.png" alt="" width="180">
+                            </div>
+                            <div class="gridItem-details">
+                                <div class="gridItem-price ">
+                                    <div>
+                                        <h6 class="py-2">$998.00</h6>
+                                        <p>$1128.00</p>
+                                    </div>
+                                    <i class="bi bi-heart border border-secondary px-1 text-primary"></i>
+                                </div>
+                                <div class=" d-flex align-itmes-center">
+                                    <div class="star d-flex align-itmes-center">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-secondary"></i>
+                                    </div>
+                                    <span class="text-warning mx-2">7.5</span>
+                                </div>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-item-img">
+                                <img src="./assets//Electronicimgs/laptop.png" alt="" width="180">
+                            </div>
+                            <div class="gridItem-details">
+                                <div class="gridItem-price ">
+                                    <div>
+                                        <h6 class="py-2">$998.00</h6>
+                                        <p>$1128.00</p>
+                                    </div>
+                                    <i class="bi bi-heart border border-secondary px-1 text-primary"></i>
+                                </div>
+                                <div class=" d-flex align-itmes-center">
+                                    <div class="star d-flex align-itmes-center">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-secondary"></i>
+                                    </div>
+                                    <span class="text-warning mx-2">7.5</span>
+                                </div>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-item-img">
+                                <img src="./assets//Electronicimgs/mobile.png" alt="" width="180">
+                            </div>
+                            <div class="gridItem-details">
+                                <div class="gridItem-price ">
+                                    <div>
+                                        <h6 class="py-2">$998.00</h6>
+                                        <p>$1128.00</p>
+                                    </div>
+                                    <i class="bi bi-heart border border-secondary px-1 text-primary"></i>
+                                </div>
+                                <div class=" d-flex align-itmes-center">
+                                    <div class="star d-flex align-itmes-center">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-secondary"></i>
+                                    </div>
+                                    <span class="text-warning mx-2">7.5</span>
+                                </div>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-item-img">
+                                <img src="./assets//Electronicimgs/watch.png" alt="" width="180">
+                            </div>
+                            <div class="gridItem-details">
+                                <div class="gridItem-price ">
+                                    <div>
+                                        <h6 class="py-2">$998.00</h6>
+                                        <p>$1128.00</p>
+                                    </div>
+                                    <i class="bi bi-heart border border-secondary px-1 text-primary"></i>
+                                </div>
+                                <div class=" d-flex align-itmes-center">
+                                    <div class="star d-flex align-itmes-center">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-secondary"></i>
+                                    </div>
+                                    <span class="text-warning mx-2">7.5</span>
+                                </div>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-item-img">
+                                <img src="./assets//Electronicimgs/image 33.png" alt="" width="180">
+                            </div>
+                            <div class="gridItem-details">
+                                <div class="gridItem-price ">
+                                    <div>
+                                        <h6 class="py-2">$998.00</h6>
+                                        <p>$1128.00</p>
+                                    </div>
+                                    <i class="bi bi-heart border border-secondary px-1 text-primary"></i>
+                                </div>
+                                <div class=" d-flex align-itmes-center">
+                                    <div class="star d-flex align-itmes-center">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-secondary"></i>
+                                    </div>
+                                    <span class="text-warning mx-2">7.5</span>
+                                </div>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-item-img">
+                                <img src="./assets//Electronicimgs/camera.png" alt="" width="180">
+                            </div>
+                            <div class="gridItem-details">
+                                <div class="gridItem-price ">
+                                    <div>
+                                        <h6 class="py-2">$998.00</h6>
+                                        <p>$1128.00</p>
+                                    </div>
+                                    <i class="bi bi-heart border border-secondary px-1 text-primary"></i>
+                                </div>
+                                <div class=" d-flex align-itmes-center">
+                                    <div class="star d-flex align-itmes-center">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-secondary"></i>
+                                    </div>
+                                    <span class="text-warning mx-2">7.5</span>
+                                </div>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-item-img">
+                                <img src="./assets//Electronicimgs/headphone.png" alt="" width="180">
+                            </div>
+                            <div class="gridItem-details">
+                                <div class="gridItem-price ">
+                                    <div>
+                                        <h6 class="py-2">$998.00</h6>
+                                        <p>$1128.00</p>
+                                    </div>
+                                    <i class="bi bi-heart border border-secondary px-1 text-primary"></i>
+                                </div>
+                                <div class=" d-flex align-itmes-center">
+                                    <div class="star d-flex align-itmes-center">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-secondary"></i>
+                                    </div>
+                                    <span class="text-warning mx-2">7.5</span>
+                                </div>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-item-img">
+                                <img src="./assets//Electronicimgs/image 32.png" alt="" width="180">
+                            </div>
+                            <div class="gridItem-details">
+                                <div class="gridItem-price ">
+                                    <div>
+                                        <h6 class="py-2">$998.00</h6>
+                                        <p>$1128.00</p>
+                                    </div>
+                                    <i class="bi bi-heart border border-secondary px-1 text-primary"></i>
+                                </div>
+                                <div class=" d-flex align-itmes-center">
+                                    <div class="star d-flex align-itmes-center">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-secondary"></i>
+                                    </div>
+                                    <span class="text-warning mx-2">7.5</span>
+                                </div>
+                                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- pagination -->
+
+            <div class="pagination">
+                <ul>
+                    <li><a href="#" class="prev"><img src="./assets/pagination/Vector.png" alt=""></a></li>
+                    <li><a href="#" class="active">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#" class="next"><img src="./assets/pagination/Vector2.png" alt=""></a></li>
+                </ul>
+            </div>
+
+
+            <!-- Subscribtion Section -->
+
+            <section class="container-fluid">
+                <div class="subscribe">
+                    <div class="sub-content">
+                        <h3>Subscribe on our newsletter</h3>
+                        <p class="p-0 mb-3">Get daily news on upcoming offers from many suppliers all over the world</p>
+                        <div class="sub-form w-75 d-flex">
+                            <input class="form-control mx-2" type="text" placeholder="Email" />
+                            <button type="button" class="btn btn-primary">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+
+            <footer class="container-fluid">
+                <div class="container">
+                    <div class="footer">
+                        <div class="f-top">
+                            <div class="f-col">
+                                <!-- Logo -->
+                                <img src="logo-colored.png" alt="" width="120" />
+                                <p class="px-5">
+                                    Best information about the company gies here but now lorem
+                                    ipsum is
+                                </p>
+
+                                <!-- Social Media Icons -->
+
+                                <div class="f-icons">
+                                    <i class="bi bi-facebook"></i>
+                                    <i class="bi bi-twitter"></i>
+                                    <i class="bi bi-linkedin"></i>
+                                    <i class="bi bi-instagram"></i>
+                                    <i class="bi bi-youtube"></i>
+                                </div>
+                            </div>
+
+                            <!-- Links -->
+
+                            <div class="f-col">
+                                <h6>About</h6>
+                                <p class="p-0  m-0 text-body-secondary">About Us</p>
+                                <p class="p-0  m-0 text-body-secondary">Find store</p>
+                                <p class="p-0  m-0 text-body-secondary">Categories</p>
+                                <p class="p-0  m-0 text-body-secondary">Blogs</p>
+                            </div>
+                            <div class="f-col">
+                                <h6>Partnership</h6>
+                                <p class="p-0  m-0 text-body-secondary">About Us</p>
+                                <p class="p-0  m-0 text-body-secondary">Find store</p>
+                                <p class="p-0  m-0 text-body-secondary">Categories</p>
+                                <p class="p-0  m-0 text-body-secondary">Blogs</p>
+                            </div>
+                            <div class="f-col">
+                                <h6>Information</h6>
+                                <p class="p-0  m-0 text-body-secondary">Help Center</p>
+                                <p class="p-0  m-0 text-body-secondary">Money Refund</p>
+                                <p class="p-0  m-0 text-body-secondary">Shipping</p>
+                                <p class="p-0  m-0 text-body-secondary">Contact us</p>
+                            </div>
+                            <div class="f-col">
+                                <h6>About</h6>
+                                <p class="p-0  m-0 text-body-secondary">For users</p>
+                                <p class="p-0  m-0 text-body-secondary">Find store</p>
+                                <p class="p-0  m-0 text-body-secondary">Categories</p>
+                                <p class="p-0  m-0 text-body-secondary">Blogs</p>
+                            </div>
+
+                            <div class="app">
+                                <h6 class="mb-2">Get App</h6>
+                                <img class="mb-1" src="./Group.png" alt="" width="100" />
+                                <img src="./market-button.png" alt="" width="100" />
+                            </div>
+                        </div>
+                        <div class="footer-end">
+                            <p>© 2023 Ecommerce</p>
+                            <select name="" id="">
+                                <option value="English">
+                                    <img src="./flages/US@2x.png" alt="" width={40} />
+                                    English
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+            </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

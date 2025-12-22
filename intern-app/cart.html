@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"
+        integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap icons link -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+        integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Css link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>my-project</title>
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Navbar Start -->
+        <div class="container">
+            <nav class="nav">
+                <!-- Logo -->
+                <a href="index.html"><img class="logo" src="logo-colored.png" alt="" /></a>
+                <!-- Search Bar -->
+                <div class="searchBar">
+                    <input type="text" id="search" />
+                    <div class="dropdown">
+                        <select name="" id="">
+                            <option value="Category">Category</option>
+                            <option value="Category">Category</option>
+                            <option value="Category">Category</option>
+                            <option value="Category">Category</option>
+                            <option value="Category">Category</option>
+                        </select>
+                    </div>
+                    <button class="search-btn">Search</button>
+                </div>
+                <!-- Navbar icons -->
+                <div class="nav-icons">
+                    <div class="user">
+                        <i class="bi bi-person-fill"></i>
+                        <p class="icon-name">User</p>
+                    </div>
+                    <div class="user">
+                        <i class="bi bi-chat-left-dots-fill"></i>
+                        <p class="icon-name">Message</p>
+                    </div>
+                    <div class="user">
+                        <i class="bi bi-heart-fill"></i>
+                        <p class="icon-name">Order</p>
+                    </div>
+                    <div class="user">
+                        <i class="bi bi-cart-fill"></i>
+                        <p class="icon-name">Cart</p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Main -->
+    <main>
+
+        <!--  -->
+
+        <section class="container">
+            <div class="cart-content">
+                <h3>My cart (3)</h3>
+                <div class="cart-sec">
+                    <div class="card cart-items">
+                        <div class="item">
+                            <img src="imgs/Bitmap.png" alt="product">
+                            <div class="item-info">
+                                <h4>T-shirts with multiple colors, for men</h4>
+                                <p>Size: medium, Color: blue, Material: Plastic</p>
+                                <p>Seller: Artel Market</p>
+                                <div style="margin-top: 10px;">
+                                    <button class="btn-red">Remove</button>
+                                    <button class="btn-blue-text">Save for later</button>
+                                </div>
+                            </div>
+                            <div style="text-align: right;">
+                                <strong>$78.99</strong><br>
+                                <select style="margin-top: 10px;">
+                                    <option>Qty: 1</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="imgs/image 26.png" alt="product">
+                            <div class="item-info">
+                                <h4>T-shirts with multiple colors, for men</h4>
+                                <p>Size: medium, Color: blue, Material: Plastic</p>
+                                <p>Seller: Artel Market</p>
+                                <div style="margin-top: 10px;">
+                                    <button class="btn-red">Remove</button>
+                                    <button class="btn-blue-text">Save for later</button>
+                                </div>
+                            </div>
+                            <div style="text-align: right;">
+                                <strong>$78.99</strong><br>
+                                <select style="margin-top: 10px;">
+                                    <option>Qty: 1</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="imgs/image 85.png" alt="product">
+                            <div class="item-info">
+                                <h4>T-shirts with multiple colors, for men</h4>
+                                <p>Size: medium, Color: blue, Material: Plastic</p>
+                                <p>Seller: Artel Market</p>
+                                <div style="margin-top: 10px;">
+                                    <button class="btn-red">Remove</button>
+                                    <button class="btn-blue-text">Save for later</button>
+                                </div>
+                            </div>
+                            <div style="text-align: right;">
+                                <strong>$78.99</strong><br>
+                                <select style="margin-top: 10px;">
+                                    <option>Qty: 1</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin-top: 15px;">
+                            <button class="btn-blue-text" style="background: #0d6efd; color: white;">Back to
+                                shop</button>
+                            <button class="btn-blue-text">Remove all</button>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <div class="card" style="margin-bottom: 15px;">
+                            <p style="font-size: 14px;">Have a coupon?</p>
+                            <div style="display: flex; gap: 5px;">
+                                <input type="text" placeholder="Add coupon"
+                                    style="flex: 1; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+                                <button
+                                    style="padding: 8px; color: #0d6efd; border: 1px solid #ddd; background: #fff; font-weight: bold;">Apply</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="row"><span>Subtotal:</span><span>$1403.97</span></div>
+                            <div class="row"><span>Discount:</span><span style="color: red;">-$60.00</span></div>
+                            <div class="row"><span>Tax:</span><span style="color: green;">+$14.00</span></div>
+                            <div class="row total"><span>Total:</span><span>$1357.97</span></div>
+                            <button class="checkout-btn">Checkout</button>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="features-bar">
+                <div class="feature-item">
+                    <div class="icon-circle"><i class="bi bi-lock-fill"></i></div>
+                    <div><p style="margin:0; font-weight:500;">Secure payment</p><small style="color:var(--text-muted)">Have you ever finally</small></div>
+                </div>
+                <div class="feature-item">
+                    <div class="icon-circle"><i class="bi bi-chat-left-text"></i></div>
+                    <div><p style="margin:0; font-weight:500;">Customer support</p><small style="color:var(--text-muted)">Have you ever finally</small></div>
+                </div>
+                <div class="feature-item">
+                    <div class="icon-circle"><i class="bi bi-truck"></i></div>
+                    <div><p style="margin:0; font-weight:500;">Free delivery</p><small style="color:var(--text-muted)">Have you ever finally</small></div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="saved-grid">
+            <div class="saved-card">
+                <img src="imgs/image 24.png" alt="GoPro">
+                <p><strong>$99.50</strong></p>
+                <p style="font-size: 13px;">GoPro HERO6 4K Action Camera - Black</p>
+                <button class="btn-blue-text" style="width: 100%; margin: 10px 0 0;"><i class="fa fa-cart-plus"></i> Move to cart</button>
+            </div>
+            <div class="saved-card">
+                <img src="imgs/image 90.png" alt="GoPro">
+                <p><strong>$99.50</strong></p>
+                <p style="font-size: 13px;">GoPro HERO6 4K Action Camera - Black</p>
+                <button class="btn-blue-text" style="width: 100%; margin: 10px 0 0;"><i class="fa fa-cart-plus"></i> Move to cart</button>
+            </div>
+            <div class="saved-card">
+                <img src="imgs/image 86.png" alt="GoPro">
+                <p><strong>$99.50</strong></p>
+                <p style="font-size: 13px;">GoPro HERO6 4K Action Camera - Black</p>
+                <button class="btn-blue-text" style="width: 100%; margin: 10px 0 0;"><i class="fa fa-cart-plus"></i> Move to cart</button>
+            </div>
+            <div class="saved-card">
+                <img src="imgs/image 30.png" alt="GoPro">
+                <p><strong>$99.50</strong></p>
+                <p style="font-size: 13px;">GoPro HERO6 4K Action Camera - Black</p>
+                <button class="btn-blue-text" style="width: 100%; margin: 10px 0 0;"><i class="fa fa-cart-plus"></i> Move to cart</button>
+            </div>
+            
+        </section>
+        <!-- Discount Banner -->
+
+        <section class="container">
+            <div class="discount-banner">
+                <div>
+                    <h2 style="margin:0">Super discount on more than 100 USD</h2>
+                    <p style="margin:5px 0 0; opacity:0.8">Have you ever finally just write dummy info</p>
+                </div>
+                <a href="#" class="shop-now">Shop now</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="footer">
+                <div class="f-top">
+                    <div class="f-col">
+                        <!-- Logo -->
+                        <img src="logo-colored.png" alt="" width="120" />
+                        <p class="px-5">
+                            Best information about the company gies here but now lorem
+                            ipsum is
+                        </p>
+
+                        <!-- Social Media Icons -->
+
+                        <div class="f-icons">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-twitter"></i>
+                            <i class="bi bi-linkedin"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-youtube"></i>
+                        </div>
+                    </div>
+
+                    <!-- Links -->
+
+                    <div class="f-col">
+                        <h6>About</h6>
+                        <p class="p-0  m-0 text-body-secondary">About Us</p>
+                        <p class="p-0  m-0 text-body-secondary">Find store</p>
+                        <p class="p-0  m-0 text-body-secondary">Categories</p>
+                        <p class="p-0  m-0 text-body-secondary">Blogs</p>
+                    </div>
+                    <div class="f-col">
+                        <h6>Partnership</h6>
+                        <p class="p-0  m-0 text-body-secondary">About Us</p>
+                        <p class="p-0  m-0 text-body-secondary">Find store</p>
+                        <p class="p-0  m-0 text-body-secondary">Categories</p>
+                        <p class="p-0  m-0 text-body-secondary">Blogs</p>
+                    </div>
+                    <div class="f-col">
+                        <h6>Information</h6>
+                        <p class="p-0  m-0 text-body-secondary">Help Center</p>
+                        <p class="p-0  m-0 text-body-secondary">Money Refund</p>
+                        <p class="p-0  m-0 text-body-secondary">Shipping</p>
+                        <p class="p-0  m-0 text-body-secondary">Contact us</p>
+                    </div>
+                    <div class="f-col">
+                        <h6>About</h6>
+                        <p class="p-0  m-0 text-body-secondary">For users</p>
+                        <p class="p-0  m-0 text-body-secondary">Find store</p>
+                        <p class="p-0  m-0 text-body-secondary">Categories</p>
+                        <p class="p-0  m-0 text-body-secondary">Blogs</p>
+                    </div>
+
+                    <div class="app">
+                        <h6 class="mb-2">Get App</h6>
+                        <img class="mb-1" src="./Group.png" alt="" width="100" />
+                        <img src="./market-button.png" alt="" width="100" />
+                    </div>
+                </div>
+                <div class="footer-end">
+                    <p>© 2023 Ecommerce</p>
+                    <select name="" id="">
+                        <option value="English">
+                            <img src="./flages/US@2x.png" alt="" width={40} />
+                            English
+                        </option>
+                    </select>
+                </div>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

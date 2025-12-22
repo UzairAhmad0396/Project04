@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"
+        integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap icons link -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+        integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Css link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>my-project</title>
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Navbar Start -->
+        <div class="container">
+            <nav class="nav">
+                <!-- Logo -->
+                <a href="index.html"><img class="logo" src="logo-colored.png" alt="" /></a>
+                <!-- Search Bar -->
+                <div class="searchBar">
+                    <input type="text" id="search" />
+                    <div class="dropdown">
+                        <select name="" id="">
+                            <option value="Category">Category</option>
+                            <option value="Category">Category</option>
+                            <option value="Category">Category</option>
+                            <option value="Category">Category</option>
+                            <option value="Category">Category</option>
+                        </select>
+                    </div>
+                    <button class="search-btn">Search</button>
+                </div>
+                <!-- Navbar icons -->
+                <div class="nav-icons">
+                    <div class="user">
+                        <i class="bi bi-person-fill"></i>
+                        <p class="icon-name">User</p>
+                    </div>
+                    <div class="user">
+                        <i class="bi bi-chat-left-dots-fill"></i>
+                        <p class="icon-name">Message</p>
+                    </div>
+                    <div class="user">
+                        <i class="bi bi-heart-fill"></i>
+                        <p class="icon-name">Order</p>
+                    </div>
+                    <div class="user">
+                        <a href="cart.html"><i class="bi bi-cart-fill"></i></a>
+                        <p class="icon-name">Cart</p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- TabBar -->
+
+        <div class="container tabbar p-0 my-0">
+            <div class="tabLinks d-flex align-itmes-center justify-content-between w-50">
+                <div class="category-menu d-flex">
+                    <i class="bi bi-list"></i>
+                    <p class="m-0">All Category</p>
+                </div>
+                <a class="nav-link" href="#">Hot Offer</a>
+                <a class="nav-link" href="#">Gift Boxes</a>
+                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#">Menu Items</a>
+                <a class="nav-link" href="#">Help</a>
+            </div>
+            <div class="dropdown">
+                <div class="language-dropdown">
+                    <button class="language-dropdown-btn">
+                        English
+                        <img class="vectory" src="assets\Vector.png" alt="" />
+                    </button>
+                    <ul class="language-dropdown-menu">
+                        <p class="lang">English</p>
+                        <p class="lang">Urdu</p>
+                        <p class="lang">Pashto</p>
+                    </ul>
+                </div>
+                <!-- Tabbar Dropdown  -->
+
+                <button class="dropdown-btn">
+                    <p>Ship to</p>
+                    <img class="dImg" src="assets/flags/US@2x.png" alt="" />
+                    <img class="v-img" src="assets/Vector.png" alt="" />
+                </button>
+                <ul class="dropdownMenu">
+                    <li>
+                        <a href="#">
+                            <img class="fixed-item menuImg" src="./assets/flags/US@2x.png" alt="Image 1" />
+                            <p>America</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="menuImg" src="./assets/flags/AE@2x.png" alt="Image 2" />
+                            <p>Arab Emarat</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="menuImg" src="./assets/flags/CN@2x.png" alt="Image 3" />
+                            <p>China</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="menuImg" src="./assets/flags/DE@2x.png" alt="Image 3" />
+                            <p>Germani</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="menuImg" src="./assets/flags/CN@2x.png" alt="Image 3" />
+                            <p>America</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="menuImg" src="./assets/flags/DK@2x.png" alt="Image 3" />
+                            <p>Denmark</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Menu Bar -->
+
+        <div class="container">
+            <div class="menubar">
+                <ul>
+                    <li>
+                        Home
+                        <img src="./assets/menuimg/Vector.png" alt="">
+                    </li>
+                    <li>
+                        Clothings
+                        <img src="./assets/menuimg/Vector.png" alt="">
+                    </li>
+                    <li>
+                        Mens Wear
+                        <img src="./assets/menuimg/Vector.png" alt="">
+                    </li>
+                    <li>
+                        Summer Clothing
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Main -->
+    <main>
+
+        <!-- product detail -->
+        <section class="container">
+            <!-- images section -->
+            <div class="product-details-bg">
+                <!-- Products Images -->
+                <div class="product-details-img-section">
+                    <!-- main image -->
+                    <div class="main-img-bg">
+                        <img src="./imgs/Bitmap.png" alt="" width="300">
+                    </div>
+                    <!-- small images -->
+                    <div class="small-imgs">
+                        <div class="s-img-bg">
+                            <img class="s-img" src="./imgs/Bitmap.png" alt="" width="45">
+                        </div>
+                        <div class="s-img-bg">
+                            <img class="s-img" src="./imgs/Bitmap (2).png" alt="" width="45">
+                        </div>
+                        <div class="s-img-bg">
+                            <img class="s-img" src="./imgs/image 30.png" alt="" width="45">
+                        </div>
+                        <div class="s-img-bg">
+                            <img class="s-img" src="./imgs/Bitmap.png" alt="" width="45">
+                        </div>
+                        <div class="s-img-bg">
+                            <img class="s-img" src="./imgs/2 1.png" alt="" width="45">
+                        </div>
+                        <div class="s-img-bg">
+                            <img class="s-img" src="./imgs/2 1.png" alt="" width="45">
+                        </div>
+                    </div>
+                </div>
+                <!-- Products Details -->
+                <div class="product-details-section">
+                    <p class="text-success fs-4"><i class="bi bi-check2 "></i>In stock</p>
+                    <h4>Mens Long Sleeve T-shirt Cotton Base Layer Slim Muscle</h4>
+                    <div class=" d-flex align-itmes-center">
+                        <div class="star d-flex align-itmes-center">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-secondary"></i>
+                        </div>
+                        <span class="text-warning mx-2">9.3</span>
+                        <span class="text-secondary fs-6 mx-3"><i class="bi bi-chat-left-text "></i> 32 reviews</span>
+                        <span class="text-secondary fs-6 "><i class="bi bi-basket3"></i> 154 Sold</span>
+                    </div>
+                    <!-- Price and pieces -->
+                    <div class="pro-prices">
+                        <div class="price p-border">
+                            <h6 class="text-danger m-0">$98.00</h6>
+                            <p class="text-secondary">50-100 pcs</p>
+                        </div>
+                        <div class="price p-border">
+                            <h6 class="m-0">$90.00</h6>
+                            <p class="text-secondary">100-700 pcs</p>
+                        </div>
+                        <div class="price ">
+                            <h6 class="m-0">$78.00</h6>
+                            <p class="text-secondary">700+ pcs</p>
+                        </div>
+                    </div>
+                    <!-- Short information -->
+                    <table class="details-table">
+                        <tr>
+                            <td class="label">Price:</td>
+                            <td class="value">Negotiable</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Type:</td>
+                            <td class="value">Classic shoes</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Material:</td>
+                            <td class="value">Plastic material</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Design:</td>
+                            <td class="value">Modern nice</td>
+                        </tr>
+                        <tr style="border-bottom: none;">
+                            <td style="padding: 10px;"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="label">Customization:</td>
+                            <td class="value">Customized logo and design custom packages</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Protection:</td>
+                            <td class="value">Refund Policy</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Warranty:</td>
+                            <td class="value">2 years full warranty</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Seller Info -->
+                <div class="seller-sec">
+                    <div class="supplier-card">
+                        <div class="supplier-header">
+                            <div class="avatar-r">R</div>
+                            <div class="supplier-text">
+                                <p class="sub-text">Supplier</p>
+                                <p class="main-name">Guanjoi Trading LLC</p>
+                            </div>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <ul class="info-list">
+                            <li><img src="https://flagcdn.com/w40/de.png" class="flag-img"> Germany, Berlin</li>
+                            <li><i class="fa-regular fa-shield-check"></i> Verified Seller</li>
+                            <li><i class="fa-solid fa-globe"></i> Worldwide shipping</li>
+                        </ul>
+
+                        <button class="btn btn-primary">Send inquiry</button>
+                        <button class="btn btn-secondary">Seller's profile</button>
+
+                        <a href="#" class="save-later">
+                            <i class="fa-regular fa-heart"></i> Save for later
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="block-details">
+                <div class="main-container">
+                    <div class="tabs">
+                        <a class="tab active">Description</a>
+                        <a class="tab">Reviews</a>
+                        <a class="tab">Shipping</a>
+                        <a class="tab">About seller</a>
+                    </div>
+
+                    <div class="content-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                        <table class="spec-table">
+                            <tr>
+                                <td class="spec-label">Model</td>
+                                <td class="spec-value">#8786867</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Style</td>
+                                <td class="spec-value">Classic style</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Certificate</td>
+                                <td class="spec-value">ISO-898921212</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Size</td>
+                                <td class="spec-value">34mm x 450mm x 19mm</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Memory</td>
+                                <td class="spec-value">36GB RAM</td>
+                            </tr>
+                        </table>
+
+                        <ul class="features">
+                            <li><i class="fa-solid fa-check"></i> Some great feature name here</li>
+                            <li><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit amet, consectetur</li>
+                            <li><i class="fa-solid fa-check"></i> Duis aute irure dolor in reprehenderit</li>
+                            <li><i class="fa-solid fa-check"></i> Some great feature name here</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sidbar  -->
+                <div class="sidebar">
+                    <h3>You may like</h3>
+
+                    <div class="product-item">
+                        <img src="./imgs/2 1.png" class="product-img">
+                        <div class="product-info">
+                            <p class="product-title">Men Blazers Sets Elegant Formal</p>
+                            <p class="product-price">$7.00 - $99.50</p>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <img src="./imgs/Bitmap.png" class="product-img">
+                        <div class="product-info">
+                            <p class="product-title">Men Shirt Sleeve Polo Contrast</p>
+                            <p class="product-price">$7.00 - $99.50</p>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <img src="./imgs/image 30.png" class="product-img">
+                        <div class="product-info">
+                            <p class="product-title">Apple Watch Series Space Gray</p>
+                            <p class="product-price">$7.00 - $99.50</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Product section -->
+        <section class="container">
+            <div class="related-section">
+                <h3>Related products</h3>
+                <div class="related-grid">
+                    <div class="product-card">
+                        <div class="prod-img"><img src="./imgs/image 24.png" alt="" width="130"></i></div>
+                        <p class="prod-name">Xiaomi Redmi 8 Original</p>
+                        <p class="prod-price">$32.00-$40.00</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="prod-img"><img src="./imgs/2 1.png" alt="" width="150"></i></div>
+                        <p class="prod-name">Xiaomi Redmi 8 Original</p>
+                        <p class="prod-price">$32.00-$40.00</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="prod-img"><img src="./imgs/image 26.png" alt="" width="150"></i></div>
+                        <p class="prod-name">Xiaomi Redmi 8 Original</p>
+                        <p class="prod-price">$32.00-$40.00</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="prod-img"><img src="./imgs/image 30.png" alt="" width="130"></i></div>
+                        <p class="prod-name">Xiaomi Redmi 8 Original</p>
+                        <p class="prod-price">$32.00-$40.00</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="prod-img"><img src="./imgs/Bitmap.png" alt="" width="120"></i></div>
+                        <p class="prod-name">Xiaomi Redmi 8 Original</p>
+                        <p class="prod-price">$32.00-$40.00</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="prod-img"><img src="./imgs/Bitmap.png" alt="" width="120"></i></div>
+                        <p class="prod-name">Xiaomi Redmi 8 Original</p>
+                        <p class="prod-price">$32.00-$40.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Discount Banner -->
+
+        <section class="container">
+            <div class="discount-banner">
+        <div>
+            <h2 style="margin:0">Super discount on more than 100 USD</h2>
+            <p style="margin:5px 0 0; opacity:0.8">Have you ever finally just write dummy info</p>
+        </div>
+        <a href="#" class="shop-now">Shop now</a>
+    </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="footer">
+                <div class="f-top">
+                    <div class="f-col">
+                        <!-- Logo -->
+                        <img src="logo-colored.png" alt="" width="120" />
+                        <p class="px-5">
+                            Best information about the company gies here but now lorem
+                            ipsum is
+                        </p>
+
+                        <!-- Social Media Icons -->
+
+                        <div class="f-icons">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-twitter"></i>
+                            <i class="bi bi-linkedin"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-youtube"></i>
+                        </div>
+                    </div>
+
+                    <!-- Links -->
+
+                    <div class="f-col">
+                        <h6>About</h6>
+                        <p class="p-0  m-0 text-body-secondary">About Us</p>
+                        <p class="p-0  m-0 text-body-secondary">Find store</p>
+                        <p class="p-0  m-0 text-body-secondary">Categories</p>
+                        <p class="p-0  m-0 text-body-secondary">Blogs</p>
+                    </div>
+                    <div class="f-col">
+                        <h6>Partnership</h6>
+                        <p class="p-0  m-0 text-body-secondary">About Us</p>
+                        <p class="p-0  m-0 text-body-secondary">Find store</p>
+                        <p class="p-0  m-0 text-body-secondary">Categories</p>
+                        <p class="p-0  m-0 text-body-secondary">Blogs</p>
+                    </div>
+                    <div class="f-col">
+                        <h6>Information</h6>
+                        <p class="p-0  m-0 text-body-secondary">Help Center</p>
+                        <p class="p-0  m-0 text-body-secondary">Money Refund</p>
+                        <p class="p-0  m-0 text-body-secondary">Shipping</p>
+                        <p class="p-0  m-0 text-body-secondary">Contact us</p>
+                    </div>
+                    <div class="f-col">
+                        <h6>About</h6>
+                        <p class="p-0  m-0 text-body-secondary">For users</p>
+                        <p class="p-0  m-0 text-body-secondary">Find store</p>
+                        <p class="p-0  m-0 text-body-secondary">Categories</p>
+                        <p class="p-0  m-0 text-body-secondary">Blogs</p>
+                    </div>
+
+                    <div class="app">
+                        <h6 class="mb-2">Get App</h6>
+                        <img class="mb-1" src="./Group.png" alt="" width="100" />
+                        <img src="./market-button.png" alt="" width="100" />
+                    </div>
+                </div>
+                <div class="footer-end">
+                    <p>© 2023 Ecommerce</p>
+                    <select name="" id="">
+                        <option value="English">
+                            <img src="./flages/US@2x.png" alt="" width={40} />
+                            English
+                        </option>
+                    </select>
+                </div>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
